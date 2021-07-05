@@ -1,0 +1,151 @@
+*, 
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+body {
+    height: 100%;
+    background-color: black;
+    font-size: 16px;
+    line-height: 1;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.wrapper {
+    min-height: 100%;
+}
+
+._container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.parallax {
+    min-height: 100vh;
+}
+.parallax__body {
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.parallax__container {
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+}
+.parallax__label {
+    color: lemonchiffon;
+    display: flex;
+    font-size: 18px;
+    letter-spacing: 4px;
+    margin: 0px, 0px, 30px, 0px;
+    align-items: center;
+}
+.parallax__label::before {
+    flex: 0 0 70px;
+    content: '';
+    margin: 0px 30px 0px 0px; 
+    background-color: lemonchiffon; 
+}
+.parallax__title {
+    font-size: 80px;
+
+}
+.parallax__images {
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    top: -10%;
+    left: -10%;
+    z-index: 1;
+
+}
+.images-parallax__item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.images-parallax__clouds,
+.images-parallax__mountains,
+.images-parallax__human {
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    left: 0;
+}
+.images-parallax__clouds {
+    background: url("../Паралакс_эффект/assets/clouds.jpg") top / cover no-repeat ;
+    top:-5%;
+    left: -10%;
+}
+.images-parallax__mountains {
+    background: url("../Паралакс_эффект/assets/mountains.png") top / cover no-repeat;
+    top: 15%;
+    left: -10%;
+    z-index: 2;
+}
+.images-parallax__human {
+    background: url("../Паралакс_эффект/assets/human.png") top / cover no-repeat;
+    top: 45%;
+    left: -10%;
+    z-index: 3;
+}
+@media (max-aspect-ratio: 3/2) {
+    .images-parallax__human {
+        background-position: 20%, top;
+    }
+}
+.content {
+    background-color: rgb(95, 148, 136);
+    position: relative;
+    z-index: 2;
+}
+.content::before {
+    pointer-events: none;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    transform: translate(0px, -100%);
+    background: linear-gradient(180deg, rgba(11, 29, 38, 0) 5%, #0d2f41 100%);
+}
+.content__title {
+    font-size: 35px;
+    margin: 0px 0px 30px 0px ;
+}
+.content__text {
+    font-size: 16px;
+    line-height: 150%;
+}
+.content__text p {
+    margin: 0px 0px 30px 0px;
+}
