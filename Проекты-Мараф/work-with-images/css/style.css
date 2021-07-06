@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  overflow: hidden;
+  margin: 0;
+  background:linear-gradient(#1547eb, #50a875); 
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+}
+.slide {
+    height: 80vh;
+    cursor: pointer;
+    margin: 10px;
+    color: whitesmoke;
+    border-radius: 20px;
+    flex: 1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+}
+.slide > h3 {
+    position: absolute;
+    font-size: 24px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    bottom: 20px;
+    margin: 0;
+    left: 20px;
+    opacity: 0;
+}
+.slide.active {
+    flex: 10;
+}
+.slide.active > h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.5s;
+    -webkit-transition: opacity 0.3s ease-in 0.5s;
+}

@@ -1,0 +1,68 @@
+.list2:hover, .list:hover {
+  list-style-type: none;
+  color: red;
+  padding-left: 40px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.bp4 {
+  color: #010707;
+}
+.bp4 > p:hover {
+  color: blue;
+}
+
+.link {
+  font-size: 80px;
+  background-color: lightgrey;
+  width: 37.7358490566%;
+}
+.link:hover {
+  color: red;
+  text-decoration: none;
+  padding: 10px;
+  letter-spacing: 8px;
+}
+
+.text {
+  font-size: 25px;
+}
+.text:hover {
+  color: green;
+  padding-left: 30px;
+  letter-spacing: 4px;
+}
+
+.list {
+  padding: 20px;
+  margin: 20px;
+  color: #35caca;
+}
+.list > li:hover {
+  color: blue;
+}
+.bp5 {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 4px;
+}
+.bp5 span:hover {
+  letter-spacing: 6px;
+  color: orange;
+}
+
+.list2 {
+  color: #35caca;
+  font-size: 25px;
+}
+.list2:hover {
+  font-size: 30px;
+}
+
+.bp6 {
+  color: red;
+  font-weight: bold;
+  margin-top: 15px;
+  letter-spacing: 2px;
+}
