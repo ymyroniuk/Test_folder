@@ -1,0 +1,50 @@
+.block_Inner-inner {
+    background-color: rgb(43, 121, 95);
+    height: 50px;
+    width: 100px;
+    text-align: center;
+}
+.blockInner {
+    background-color: brown;
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    margin-top: 10px;
+}
+.block {
+    margin-top: 10px;
+    background-color: chocolate;
+    height: 200px;
+    width: 300px;
+    text-align: center;
+}
+.menu {
+    margin-top: 10px;
+    display: inline-block;
+}
+.menu._active .menu_list {
+    display: block;
+}
+.menu._active .menu_button span:first-child {
+    display: none;
+}
+.menu._active .menu_button span:last-child {
+    display: block;
+}
+.menu_button span:first-child {
+    display: block;
+}
+.menu_button span:last-child {
+    display: none;
+}
+.menu_list {
+    background-color: rgb(134, 28, 134);
+    padding: 25px;
+}
+.menu_list li:not(:last-child) {
+    margin: 0px 0px 15px 0px;
+}
+.menu_link {
+    color: white;
+    font-size: 16px;
+}
