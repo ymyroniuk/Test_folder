@@ -17,6 +17,3 @@ async function start() {
         })).catch(err => console.error(`Error connecting to mongo: ${mongoUri}`))
 };
 start()
-
-
-//Myronuik1312
