@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: white;
+}
+#login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.frm {
+    width: 400px;
+}
+.frg-pass {
+    margin-top: 5px;
+}
+.linkreg {
+    margin-top: 10px;
+}
+.sign {
+    margin-top: -85px;
+    margin-left: 180px;
+    width: 100px;
+    height: 40px;
+}
+.sign:hover {
+    transform: translate(10px, 10px);
+    transition: all 1s;
+}
+.registr:hover {
+    transform: translate(10px, 10px);
+    transition: all 1s;
+}
+.auth {
+    margin-top: 20px;
+}
+#reg {
+    color: rgb(255, 255, 255);
+    background-color: rgb(48, 182, 192);
+}
+#sigin {
+    color: rgb(255, 255, 255);
+    background-color: rgb(12, 169, 180);
+}
+.reset:hover {
+    background-color: black;
+    transform: rotate(360deg);
+    transition: all 1.5s;
+}
+.activator {
+    width: 500px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.centr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    width: 25px;
+    height: 25px;
+    background-image: white;
+    
+}
+.password_btn.active::after {
+    opacity: 0;
+  }
+.password_btn {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+  }
+.password_btn::after {
+    position: absolute;
+    content: '';
+    top: 10px;
+    right: -2px;
+    width: 30px;
+    height: 2px;
+    background: black;
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
+    opacity: 1;
+    -webkit-transition: 1s all ease;
+    transition: 1s all ease;
+  }
+
+.password_btn_2.active::after {
+    opacity: 0;
+}
+.password_btn_2 {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+.password_btn_2::after {
+    position: absolute;
+    content: '';
+    top: 10px;
+    right: -2px;
+    width: 30px;
+    height: 2px;
+    background: black;
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
+    opacity: 1;
+    -webkit-transition: 1s all ease;
+    transition: 1s all ease;
+}

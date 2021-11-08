@@ -20,11 +20,18 @@ class Model {
         }
         await this.connect(query)
     }
-    async findUser(email) {
+    async findUserEmail({email}) {
         let query = `SELECT * FROM ${this.table} WHERE email = "${email}";`
         console.log(query);
         await this.connect(query)
         return email
+    }
+
+    async changePassword(email, password) {
+        let query = `UPDATE ${this.table} SET password = "${password}" WHERE email = "${email}"`
+        console.log(query);
+        await this.connect(query)
+        return true
     }
 
     async getAll(data) {

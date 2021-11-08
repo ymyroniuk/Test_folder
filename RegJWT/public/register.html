@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Registration page</title>
 </head>
 <body>
@@ -19,13 +19,14 @@
     </div>
 
     <div class="input-field">
-        <input id="rpassword" name="password" type="password" class="validate" required>
+        <input id="rpassword" name="password" type="password" class="validate input-eye" required>
+        <div class="password_btn"><img src="./img/eyeHide.png" alt="img"></div>
         <label for="rpassword">Password</label>
         <span class="helper-text" data-error="Enter your password"></span>
     </div>
-
     <div class="input-field">
-        <input id="confirm" name="confirm" type="password" class="validate" required>
+        <input id="confirm" name="confirm" type="password" class="validate input-eye_2" required>
+        <div class="password_btn_2"><img src="./img/eyeHide.png" alt="img"></div>
         <label for="confirm">Confirm password</label>
         <span class="helper-text" data-error="Enter your password"></span>
     </div>
@@ -40,5 +41,7 @@
   </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="js/copy.js"></script>
 </body>
 </html>

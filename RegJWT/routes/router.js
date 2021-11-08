@@ -1,5 +1,5 @@
 const { Router } = require('express');
-const Controller = require('../db');
+const Controller = require('../db')
 const path = require('path');
 const { check } = require('express-validator');
 
@@ -22,5 +22,7 @@ router.post('/login', Controller.loginPOST)
 router.get('/reset', Controller.resetGET)
 router.post('/reset', Controller.resetPOST)
 router.post('/logout', Controller.logout)
+router.get('/change', Controller.changePasswordGET)
+router.post('/change', Controller.changePasswordPOST)
 
 module.exports = router
