@@ -10,7 +10,7 @@ app.use(express.static('static'))
 app.use(fileUpload({}))
 app.use('/', router)
 
-const connection = 'mongodb+srv://Users:USERS@cluster0.knn4g.mongodb.net/Users?retryWrites=true&w=majority'
+const connection = 'mongodb+srv://Users:<password>@cluster0.knn4g.mongodb.net/Users?retryWrites=true&w=majority'
 
 const PORT = process.env.PORT || 3000;
 
