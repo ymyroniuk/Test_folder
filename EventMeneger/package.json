@@ -1,0 +1,38 @@
+{
+  "name": "eventmanager",
+  "version": "1.0.0",
+  "description": "SOS Event manager",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vStesh/EventManager.git"
+  },
+  "author": "Volodymyr Steshenko, Kyrylo Ovsiannik, Eugen Semeniuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vStesh/EventManager/issues"
+  },
+  "homepage": "https://github.com/vStesh/EventManager#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.6",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.13.0",
+    "hbs": "^4.1.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.12",
+    "nodemailer": "^6.7.1"
+  },
+  "devDependencies": {
+    "concurrently": "^6.3.0",
+    "nodemon": "^2.0.14"
+  }
+}
