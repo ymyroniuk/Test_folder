@@ -191,18 +191,18 @@
 
 //метод reduce 
 
-//let people = [
- //  {name : 'Vlad', salary : 1500},
- //  {name : 'Denis', salary : 2500},
- //  {name : 'Vika', salary : 3500}
- //]
- //let per =  people
- //.filter(person => person.salary > 2000)
- //.reduce((info, person) => {
- //  info += person.salary
- //  return info
- //}, 0)
- //console.log(per)
+let people = [
+  {name : 'Vlad', salary : 1500},
+  {name : 'Denis', salary : 2500},
+  {name : 'Vika', salary : 3500}
+ ]
+ let per =  people
+ .filter(person => person.salary > 2000)
+ .reduce((info, person) => {
+  info += person.salary
+  return info
+ }, 0)
+ console.log(per)
 
  
 
